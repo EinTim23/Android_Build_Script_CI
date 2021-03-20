@@ -4,7 +4,9 @@ rm -rf .repo & # lets remove unnecessary things, so that no storage issue can oc
 
 # Normal build steps
 . build/envsetup.sh
-lunch lineage_miatoll-userdebug
+sed -i "s/wulan17/TimR/" kernel/xiaomi/mt6765/arch/arm/configs/cereus_defconfig 
+. build/envsetup.sh
+lunch lineage_cereus-userdebug
 export SELINUX_IGNORE_NEVERALLOWS=true
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
@@ -25,7 +27,7 @@ make_metalava(){
 
 make_rom(){
 	make bacon -j20
-	zip=$(up out/target/product/miatoll/*zip)
+	zip=$(up out/target/product/cereus/*zip)
 	echo " "
 	echo "$zip"
 }
