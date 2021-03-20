@@ -7,8 +7,8 @@ mkdir -p /tmp/rom
 cd /tmp/rom
 
 repo init --no-repo-verify --depth=1 -u "$MANIFEST" -b "$BRANCH" -g default,-device,-mips,-darwin,-notdefault
-git config --global user.name ItsVixano
-git config --global user.email vixanonew@gmail.com
+git config --global user.name EinTim
+git config --global user.email endme23@protonmail.com
 
 git clone https://github.com/wulan17/local_manifests -b 11 .repo/local_manifests
 
