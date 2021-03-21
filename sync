@@ -10,6 +10,6 @@ repo init --no-repo-verify --depth=1 -u "$MANIFEST" -b "$BRANCH" -g default,-dev
 git config --global user.name EinTim
 git config --global user.email endme23@protonmail.com
 
-git clone https://github.com/nrudesu/local_manifests -b certus-r .repo/local_manifests
+git clone https://github.com/EinTim23/local_manifests -b certus-r .repo/local_manifests
 
 repo sync -j16
