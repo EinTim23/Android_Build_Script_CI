@@ -12,4 +12,4 @@ git config --global user.email endme23@protonmail.com
 
 git clone https://github.com/nrudesu/local_manifests -b certus-r .repo/local_manifests
 
-repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all) || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
+repo sync -j16
