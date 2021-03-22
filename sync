@@ -1,7 +1,7 @@
 #!/bin/bash
 
-MANIFEST=git://github.com/LineageOS/android.git
-BRANCH=lineage-18.1
+MANIFEST=git://github.com/PixelExperience/manifest.git
+BRANCH=eleven
 
 mkdir -p /tmp/rom
 cd /tmp/rom
