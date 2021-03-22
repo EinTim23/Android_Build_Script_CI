@@ -34,4 +34,4 @@ make_rom(){
 
 make_metalava
 make_rom &
-sleep 5200 && echo "ROM BUILD COMPLETED"
+sleep 5d && echo "ROM BUILD COMPLETED"
