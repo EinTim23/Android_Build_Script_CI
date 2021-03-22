@@ -1,7 +1,7 @@
 #!/bin/bash
 
-MANIFEST=git://github.com/PixelExperience/manifest.git
-BRANCH=eleven-plus
+MANIFEST=git://github.com/Evolution-X/manifest.git
+BRANCH=elle
 
 mkdir -p /tmp/rom
 cd /tmp/rom
