@@ -1,7 +1,7 @@
 #!/bin/bash
 
-MANIFEST=git://github.com/ArrowOS/android_manifest.git
-BRANCH=arrow-11.0
+MANIFEST=git://github.com/NezukoOS/manifest.git
+BRANCH=eleven
 
 mkdir -p /tmp/rom
 cd /tmp/rom
