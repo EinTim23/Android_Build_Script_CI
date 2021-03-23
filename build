@@ -6,7 +6,7 @@ rm -rf .repo & # lets remove unnecessary things, so that no storage issue can oc
 . build/envsetup.sh
 sed -i "s/wulan17/TimR/" kernel/xiaomi/mt6765/arch/arm/configs/cereus_defconfig 
 . build/envsetup.sh
-lunch evolution_cereus-userdebug
+lunch arrow_cereus-userdebug
 export SELINUX_IGNORE_NEVERALLOWS=true
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
