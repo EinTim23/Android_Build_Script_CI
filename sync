@@ -1,7 +1,7 @@
 #!/bin/bash
 
-MANIFEST=git://github.com/NezukoOS/manifest.git
-BRANCH=eleven
+MANIFEST=git://github.com/AospExtended/manifest.git
+BRANCH=11.x
 
 mkdir -p /tmp/rom
 cd /tmp/rom
