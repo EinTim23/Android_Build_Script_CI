@@ -12,5 +12,5 @@ git config --global user.email endme23@protonmail.com
 
 git clone https://github.com/EinTim23/local_manifests -b r .repo/local_manifests
 
-repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all) || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
+repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j4
  
