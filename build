@@ -26,8 +26,8 @@ make_metalava(){
 }
 
 make_rom(){
-#	make bacon -j20 normal roms
-        make aex -j20 #aosp extended
+	make bacon -j20 normal roms
+       # make aex -j20 #aosp extended
 	zip=$(up out/target/product/cereus/*zip)
 	echo " "
 	echo "$zip"
