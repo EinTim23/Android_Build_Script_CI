@@ -1,7 +1,7 @@
 #!/bin/bash
 export VANILLA_BUILD=TRUE
-MANIFEST=git://github.com/AospExtended/manifest.git
-BRANCH=11.x
+MANIFEST=git://github.com/AOSPK/manifest.git
+BRANCH=eleven
 
 mkdir -p /tmp/rom
 cd /tmp/rom
@@ -12,5 +12,5 @@ git config --global user.email endme23@protonmail.com
 
 git clone https://github.com/EinTim23/local_manifests -b r .repo/local_manifests
 
-repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j4
+repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j16 || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j4
  
