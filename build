@@ -1,7 +1,7 @@
 #!/bin/bash
 cd /tmp/rom # Depends on where source got synced
 rm -rf .repo & # lets remove unnecessary things, so that no storage issue can occur
-
+export VANILLA_BUILD=TRUE
 # Normal build steps
 . build/envsetup.sh
 sed -i "s/wulan17/TimR/" kernel/xiaomi/mt6765/arch/arm/configs/cereus_defconfig 
