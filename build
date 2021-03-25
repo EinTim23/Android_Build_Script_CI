@@ -7,7 +7,7 @@ rm -rf .repo & # lets remove unnecessary things, so that no storage issue can oc
 sed -i "s/wulan17/TimR/" kernel/xiaomi/mt6765/arch/arm/configs/cereus_defconfig 
 . build/envsetup.sh
 export VANILLA_BUILD=true
-lunch aosp_cereus-userdebug
+lunch pixys_cereus-userdebug
 export SELINUX_IGNORE_NEVERALLOWS=true
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
@@ -27,7 +27,7 @@ make_metalava(){
 }
 
 make_rom(){
-	make bacon -j20
+	make pixys -j20
        # make aex -j20 #aosp extended
 	zip=$(up out/target/product/cereus/*zip)
 	echo " "
