@@ -1,5 +1,5 @@
 #!/bin/bash
-
+export VANILLA_BUILD=TRUE
 MANIFEST=git://github.com/AospExtended/manifest.git
 BRANCH=11.x
 
